@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joy's Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" type="text/css" />
+    <link href="https://fonts.googaleapis.com/css?family=Quattrocento" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio.css" media="screen" type="text/css" />
+  </head>
+  <body>          
+    <div class="container">
+      <div class="header">
+        <a href="index.html"><img class="logo" src="./img/logo.png" alt="Joy"/></a>
+        <a target="_blank" href="./joyx_resume.pdf" class="pull-right uppercase link">Resume</a>
+      </div>
+
+      <article>
+          <div class="header text-center">
+            <h1>Making big data simple</h1>
+            <p>How I approach designs in a complex domain</p>
+          </div>
+
+          <img src="img/databricks/Databricks.jpg" class="img-responsive img-centered">          
+          
+          <div>                
+            <h3 class="text-center">Background</h3>
+            <div class="desc">
+              <p>
+                Databricks provides a unified analytics platform to accelerate business outcomes by unifying data science, engineering and business. I joined the company since September 2015, and did several end-to-end projects to facililate a more seamless experience when it comes to exploring and transforming big data.
+               See below a high level view of who we are building for and how our product works. 
+              </p>
+              <img src="img/databricks/userneeds.jpg" class="img-responsive img-centered">
+            </div>
+
+            <h3 class="text-center">Role</h3>
+            <div class="middledesc">
+            <p>
+              A designer at a startup wears multiple hats. I not only drive product design from ideation to implementation, but also use our product as much as possible for data informed designs. For brevity I listed a case study as below to demostrate I approach designs at Databricks.
+            </p>          
+            </div>
+
+            <h3 class="text-center">Visualizing streaming information case study</h3>
+            <img src="img/databricks/viz.jpg" class="img-responsive img-centered">
+            <div class="middledesc"> 
+              <h4>Background</h4>
+              <p>When running a streaming task to process data in real time, users often want to know current status of the task, and also monitor the progress. In backend we generate the status metadata every few seconds. The goal here is to organize streaming information to make it easy for customer to consume.       
+              </p>
+              <h4>Solution</h4>
+              <p>A picture is worth a thousand words. After working closely with our engineers, we came up with the following visualizations to facilitate rapid analysis of the recent progress of a streaming task. We also collapse the visualizations by default after incorporating internal users' feedback. Last but not least, I made an icon with different colors to indicate the status of the streaming task, and we also give users a simple way to see more information when hovering on the icon.</p> 
+              <img src="img/databricks/StreamingInfo.jpg" class="img-responsive img-centered"> 
+              <h4>Design Process</h4>              
+              <p><strong>Expert interview</strong>: To get more context quickly, I sat with one of our streaming experts with the following questions:</p>
+              <ul>
+                <li>What each row of meta data mean? How important is it to the user?</li>
+                <li>What questions the users may have on their streaming task?And why?</li>
+                <li>What other similar products shall I look into?</li>
+                <li>Once we have some ideas, who shall I talk to internally to get feedback?</li>
+              </ul>
+              <p>
+              <strong>More research on my own</strong>: After expert interview, I looked up similar products and searched the terminilogies I did not understand well earlier to get a better picture of the domain. I also started to explore the visualizations for showing the progress.</p>
+              <p><strong>Design together with the engineers</strong>: Next I sat together with our two engineers(two streaming experts, and one of them will implement the designs), shared with them the research I had done, and we started to whiteboard the visualizations each of us had in mind. At last we reached consesus on:</p>
+              <ul>
+                <li>What information we need to sufface and what to hide</li>
+                <li>What graphs make more sense</li>
+                <li>What are the possible layouts(which one works best was not decided yet)</li>
+                <li>How it fits in the current UI</li>
+              </ul>
+               <img src="img/databricks/process.jpg" class="img-responsive img-centered">
+              <p>
+               <strong>Iterations</strong>: With those early concepts, I went back to work in Sketch, explored different layouts, collected feedback from a broader group and iterated quickly. I also made <a href="https://codepen.io/xiefen/pen/bggYxZ">an streaming icon</a> in Codepen to prototype 3 different states.
+              </p>
+               <div class="row streamingicon text-center">
+                  <div class="col-lg-4">
+                    <svg width="60" height="60" viewBox="5 0 60 60">
+                      <path class="wave" fill="none" stroke="#16B169" stroke-width="4" stroke-linecap="round" d="M -6 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" $=0$=010.0" />
+                    </svg>
+                    <p>Active: processing data</p>
+                  </div>
+                  <div class="col-lg-4">
+                      <svg width="60" height="60" viewBox="5 0 60 60">
+                      <path class="wave-2" fill="none" stroke="#16B169" stroke-width="4" stroke-linecap="round" d="M -6 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" $=0$=010.0" />
+                    </svg>
+                    <p>Active: waiting for data or trigger</p>
+                  </div>
+                  <div class="col-lg-4">
+                      <svg class="terminated" width="60" height="60" viewBox="5 0 60 60">
+                      <path class="wave-2" fill="none" stroke="#c0c0c0" stroke-width="4" stroke-linecap="round" d="M -6 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" $=0$=010.0"/>
+                      <p>Terminated</p>
+                  </div>
+               </div>
+               <p>
+               <strong>Add design specs and check in often</strong>: The iterations helped finalize the layout and interation details for the key mock. I also documented the key decisions we made during the process and explained why we did it in case other stakeholders have questions. After getting a signed off from our broader group, I worked on the design specs - adding other states(loading, empty, error, and etc) and measurements. I also checked in often to clarify questions and revised small details when we got more feedback. 
+              </p>
+
+              <h4>Outcome</h4> 
+              <p>By working closely with our 2 engineers and getting feedback regularly from other stakeholders, we were able to <strong>design and implement the project in one sprint (2 weeks)</strong>.</p>
+            </div>
+
+
+            <div>         
+              <a class="btn btn-outline" href="index.html">Back to home</a>       
+              <a class="btn btn-outline pull-right" href="styleguide.html">Next project <i class="fa fa-angle-right"></i> </a>
+            </div>
+
+          </div> <!-- col-lg-10  -->    
+      </article>
+
+      <div class="footer">
+        <ul class="list-inline">
+          <li><a target="_blank" href="https://www.facebook.com/xiefen"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <!--  if (you.likeMyWork && you.haveDribbbleInvite && you.sendInviteTo("xfjoy0223@gmail.com"))
+                  me.appreciate("A LOT!!!")
+                else
+                  me.lol("Are you still reading?")
+          -->
+          <!--  <li><i class="fa fa-dribbble" aria-hidden="true"></i></li> -->
+          <li><a target="_blank" href="https://www.linkedin.com/in/xiefen/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
+        <!--  <p class="pull-right">Copyright © 2017 Fen Xie</p> -->
+        <p class="pull-right list-inline">Handcrafted with <i class="fa fa-heart red"></i> by Fen Xie</p>
+      </div>
+    </div> <!-- End of container -->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-93347403-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
+

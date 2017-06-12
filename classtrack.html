@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joy's Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" type="text/css" />
+    <link href="https://fonts.googaleapis.com/css?family=Quattrocento" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio.css" media="screen" type="text/css" />
+  </head>
+  <body>          
+    <div class="container">
+      <div class="header">
+        <a href="index.html"><img class="logo" src="./img/logo.png" alt="Joy"/></a>
+        <a target="_blank" href="./joyx_resume.pdf" class="pull-right uppercase link">Resume</a>
+      </div>
+
+      <article>
+        <div class="header text-center">
+            <h1>ClassTrack Design</h1>
+            <p>An attendance and payment management tool inside Facebook</p>
+        </div>
+         
+        <div>             
+            <img src="img/classtrack/KeyMocks.jpg" class="img-responsive img-centered">           
+            <h3 class="text-center">Background</h3>
+            <div>
+              <p>On a Tuesday night, I took an Uber at the surge hour, arrived on time for my drawing class, but only saw my boyfriend standing in front of a closed door. He said, the instructor cancelled the class by email. We were not informed as we are not in the regular class list — it was our make-up class that day, and the instructor forgot to add us there in her attendance management spreadsheet.</p>
+
+              <p>Bummer.</p>
+
+              <p>My drawing instructor is a middle-aged lady. She owns a lovely art studio, teaching 4–6 classes each week and managing all the enrollments, attendances, and payments in a spreadsheet. I asked her how the spreadsheet works out for her.</p>
+
+              <p class="quote">
+                Inna: It is not perfect, do you know any other tools? <br>
+                I: What doesn’t work for you?
+              </p>
+
+              <p>The moment I started this conversation, design challenge is accepted.</p>
+            </div>
+
+            <h3 class="text-center">Role</h3>
+            <div class="middledesc" >
+              <p>With a ultimate goal of designing technology for a wider audience, I initiated the project to reduce instructors' time spent on administrative chores and designed a attendance and payment management tool inside Facebook.  
+              </p>
+            </div>
+
+            <h3 class="text-center">What's The Gap</h3>
+            
+            <div>
+              <img src="img/classtrack/Example.jpg" class="img-responsive img-centered">  
+              <p>Inna spends lots of time in managing the spreadsheet manually. Here are some key tasks:</p>
+               <ul>
+                <li>Clone a new tab and fix the date every month</li>
+                <li>Copy email addresses manually to send tuition reminder, class cancelation, or any other messages.</li>
+                <li>Mark on the spreadsheet right away for every change (attendance, payment, or makeup class request) or else it is very easy to lose track</li>
+                <li>Recently, she has another strong motive to look for another tool: <i>Can I share this part of spreadsheet with my contractor without her viewing my other information?</i></li>              
+              </ul>
+              <p>Inna’s art studio hosts other classes which are taught by another instructor (her contractor), she needs her to mark attendances without her managing payment and viewing other class data.
+              <br><br>
+              On the other side (students’ side), my boyfriend and I find it difficult to remember how much we have paid, or how many make-up classes we have left. We do not have any spreadsheet to track those (it is too much, even for me :D).
+              <br><br>
+              The question is:
+              <strong class="text-center">how can we (both instructors and students) track the attendances and payments more seamlessly?</strong>
+              </p>
+            </div>
+
+            <h3 class="text-center">Design Process</h3>
+            
+            <div>
+             <h4>Hypothesis</h4>
+             <img src="img/classtrack/Hypothesis.JPG" class="img-responsive img-centered">
+
+             <h4>User flow</h4>
+             <p>With the goal of tracking the attendances and payments, I highlight the key parts I want to focus on in the user flow. I also add 2 features that are almost impossible in spreadsheet: add moderator and view stats. Other scenarios such as parent/guardian, or student referral program are left out to keep the MVP(minimum viable product) lean.</p>
+             <img src="img/classtrack/WorkflowScoped.jpg" class="img-responsive img-centered">
+
+             <h4>How does it fit in Facebook</h4>
+             <p class="text-center quote">Don’t reinvent the wheel, just realign it. — Anthony J. D’Angelo</p>
+             <p>Facebook has 3 features that very related to ClassTrack modules:</p>
+              <ul>
+                <li>
+                Facebook event: bring people together. Each class could be considered as a recurring event with each run as a single event. </li>
+                <li>
+                Facebook page: a place for people to meet your business. All the classes hosted by the business owner can be displayed as a tab under her Facebook page, just like other tabs such as Posts, Videos, Events, Services, Jobs, and etc. </li>
+                <li>
+                Facebook group: a space to communicate about shared interests with certain people. The concept of class is very similar to group. Both manage members and events. The difference is Facebook Group focusing on members and their communication, while the ClassTrack aims to serve instructor administrative needs first.</li>
+              </ul>
+              <p>In a sentence, ClassTrack is a recurring-event group under Facebook page.</p>
+
+             <img src="img/classtrack/FB.jpg" class="img-responsive img-centered">
+
+
+             <h4>The feature and content mapping</h4>
+              <p>After several rounds of playing with different mobile apps, drawing low-fidelity wireframes, doing self-evaluation, and getting feedback from friends, I mapped the main features and content as below.</p> 
+              <img src="img/classtrack/FeatureMapping.jpg" class="img-responsive img-centered">
+
+              <h4>User testing with the prototype</h4>
+              <p></p>
+               <div class="row">         
+                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                  <iframe width="438" height="930" src="//invis.io/BGC08M262" frameborder="0" allowfullscreen></iframe>
+                 </div>
+                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                 <p>Instructor's tasks:</p>
+                  <ul>
+                    <li> Find class under your business page
+                    </li>
+                    <li> Create a class
+                    </li>               
+                    <li> Add students
+                    </li>
+                    <li> Take attendance
+                    </li>               
+                    <li> Request payment
+                    </li>
+                  </ul>
+                  <br>
+                  <p>Findings and improvments:</p>
+                  <ul>
+                    <li> When creating a class, one participant asked Why I need to set the instructor. Should not it be myself? I explained the contractor case. And I also set a default value in this field. 
+                    </li>
+                    <li> I updated a few labels that confused my participants. For examples, in add students, change "Invited by Email" to "Added by Email"; update "pay $180" to "Mark as paid".   
+                    </li>               
+                  </ul>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <p>Student's tasks:</p>
+                   <ul>
+                    <li> When is your next class for oil painting? 
+                    </li>
+                    <li> Have you paid your April tuition? 
+                    </li>               
+                    <li> How many make up classes (credits) do you have? 
+                    </li>
+                  </ul>
+
+                  <br>
+                  <p>Findings and improvments:</p>
+                  <ul>
+                    <li> One participant asked why upcoming class runs is a vertical list while enrolled classes use horizontal scrolling layout? I adopted the pattern from event UI but after thinking more about the use case, horizontal scrolling is for exploration more, I changed my enrolled classes back to a vertical list.
+                    </li>
+                    <li>Another participant mentioned she did not notice one class is cancelled. To get more attention I applied red color to the canceled class run.    
+                    </li>               
+                  </ul>
+                 </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                  <iframe width="438" height="930" src="//invis.io/N5C0W9IUT" frameborder="0" allowfullscreen></iframe>
+                 </div>
+               
+              </div>
+        
+            </div>
+
+            <div>
+              <h3 class="text-center">Outcome</h3>
+              <div >
+                <p>This project is a great opportunity for me to hone my design skills. The idea also motivated my instructor to develop her Facebook page by sharing detailed information of the upcoming events and featuring some of the student’s creations. <p>
+              </div>
+            </div>
+
+            <div>         
+              <a class="btn btn-outline" href="index.html">Back to home</a>       
+              <a class="btn btn-outline pull-right" href="sphinx.html">Next project <i class="fa fa-angle-right"></i> </a>
+            </div>
+        
+        </div><!-- "row" -->   
+      </article>
+
+
+      <div class="footer">
+        <ul class="list-inline">
+          <li><a target="_blank" href="https://www.facebook.com/xiefen"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <!--  if (you.likeMyWork && you.haveDribbbleInvite && you.sendInviteTo("xfjoy0223@gmail.com"))
+                  me.appreciate("A LOT!!!")
+                else
+                  me.lol("Are you still reading?")
+          -->
+          <!--  <li><i class="fa fa-dribbble" aria-hidden="true"></i></li> -->
+          <li><a target="_blank" href="https://www.linkedin.com/in/xiefen/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
+        <p class="pull-right list-inline">Handcrafted with <i class="fa fa-heart red"></i> by Fen Xie</p>
+      </div>
+    </div> <!-- End of container -->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-93347403-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
+

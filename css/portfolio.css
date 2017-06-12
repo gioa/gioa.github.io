@@ -1,0 +1,280 @@
+/*-- Font --*/
+body{
+  font-family: 'Quattrocento', serif;
+}
+
+/*-- Utility --*/
+a:hover{
+  text-decoration: none;
+}
+
+/*-- Color --*/
+.red{
+  color:#DC2022;
+}
+
+a{
+  color: #4267B2;
+}
+
+.footer a,
+.footer p,
+.link{
+  color: #757575;
+}
+
+a:hover,
+.footer a:hover,
+.link:hover{
+  color:#5890FF;  
+}
+
+/*-- spacing --*/
+.container{
+  max-width: 840px;
+}
+
+.header,
+.footer{
+  margin: 40px 0px; 
+}
+
+/*Logo*/
+.logo{
+  width: 40px;
+  height:40px;
+  display: inline-block;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.logo:after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.logo:hover::after {
+  opacity: 1;
+}
+
+/*resume*/
+.uppercase{
+  text-transform: uppercase;
+} 
+
+.link{
+  line-height:40px; 
+}
+
+
+/*-- home page --*/
+.tagline{
+  margin: 40px 0px;
+  font-size: 24px;
+  line-height:36px;
+  color: #757575;
+}
+
+.row{
+  margin-bottom: 32px;
+}
+
+.project
+{
+  padding: 16px;
+  border: 1px solid #eee;
+  height: 200px;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project:after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 1px 2px rgba(220, 32, 34, 0.16);
+  opacity: 0;
+  border: 1px solid #DC2022; /*red*/
+  -webkit-transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+.project:hover::after {
+  opacity: 1;
+}
+
+.project-header{
+  padding-bottom: 8px;
+}
+
+.project-header .logo{
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+.project-header .company{
+  font-size: 16px;
+  top:2px;
+  position: relative;
+  color:#757575;
+}
+
+.project-title .title{
+  font-weight: 600px;
+  color: #333;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 4px;
+}
+.project-title .subtitle{
+  font-weight: 200px;
+  color: #757575;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*-- project page--*/
+article .header{
+  margin: 64px 0px 40px 0px;
+}
+
+article img{
+  max-width: 100%;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+article .header h1{
+  font-size: 56px;
+}
+
+article .header p{
+  font-size: 24px;
+  color: #757575;
+}
+
+article h3{
+  margin: 64px 0px 24px 0px;
+  font-size: 32px;
+  color: #333;
+  font-weight: 400;
+}
+
+article h4{
+  font-size: 24px;
+  margin-top: 32px;
+}
+
+article p, 
+article ul li,
+article ol li
+{
+  font-size: 18px;
+  line-height: 28px;
+  color: #555;
+}
+
+
+article ul li, 
+article ol li{
+  list-style-position: outside;
+
+}
+
+article ol{
+  padding-left: 0px;
+}
+
+article .quote{
+  border-left: 1px solid #eee;
+  padding-left: 24px;
+  font-style: italic;
+  margin: 24px 0px;
+}
+
+
+ .btn-outline, 
+ .btn-outline:visited {
+  color: #5890FF;
+  font-size: 18px;
+  padding: 4px 8px;
+  background-color: transparent;
+  border-color: #5890FF;
+  margin-top: 20px;
+}
+
+.btn:hover, 
+.btn:focus {
+  color:#fff;
+  background-color: #5890FF;
+}
+
+/*-- project svg --*/
+.streamingicon{
+  margin: 20px auto;
+
+}
+svg{
+  border: 4px solid #16B169;
+  border-radius: 50px;
+}
+.terminated{
+  border: 4px solid #c0c0c0;
+}
+.wave {
+  animation: moveTheWave 2400ms linear infinite;
+  stroke-dasharray: 0 16 101 16;
+}
+
+@keyframes moveTheWave {
+
+  0% {
+    stroke-dashoffset: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    stroke-dashoffset: -133;
+    transform: translate3d(-90px, 0, 0);
+  }
+
+}
+
+/*-- footer --*/
+.footer{
+  display: block;
+}
+
+.footer ul,
+.footer p{
+  display:inline-block;
+}
+
+.footer .fa{
+  font-size: 16px;
+  padding-right: 8px;
+}
+
+.footer .fa-heart{
+  font-size: 12px;
+  padding-right: 2px;
+}
