@@ -31,13 +31,13 @@
           
           <h3 class="text-center">Background</h3>
           <div >
-            <p>I joined Databricks as the second product designer. When I started to work on my first design task, there were <strong>no existing design assets to reuse</strong>. I inspected the CSS style of existing product to understand which color, font size, and spacing I should use for the new elements. To make my life easier for future design iterations, I started to acculmuate design assets on Sketch and also build an online design style guide for easy access.
+            <p>I joined Databricks as the second product designer. When I started to work on my first design task, there were <strong>no existing design assets to reuse</strong>. I inspected the CSS style of existing product to understand which color, font size, and spacing I should use for the new elements. To make my life easier for future design iterations, I started to accumulate design assets on Sketch and also build an online design style guide for easy access.
             </p>
           </div>
 
           <h3 class="text-center">Role</h3>
           <div>
-          <p>From the beginning I understand building a style guide is not something urgent, but very important for improving design productivity. So I worked on the style guide whenever I was not busy with other design requests. It took me 3 major iterations to designed and developed the styleguide from scratch.    
+          <p>From the beginning I understand building a style guide is not something urgent, but very essential for improving design productivity. So I worked on the style guide whenever I was not busy with other design requests. It took me 3 major iterations to designed and developed the style guide from scratch.    
           </p>
           </div>
 
@@ -46,10 +46,10 @@
           <div>
             <h4>First version — static image on the web</h4>
 
-            <p>After a few design tasks, I accumulated several current pages in Sketch and put together a set of guidelines for colors, fonts, icons and spacings. With a goal of <strong>organizing the content better and putting it on the web for easy access</strong>, I looked at other style guide examples:</p>
+            <p>After a few design tasks, I accumulated several current pages in Sketch and put together a set of guidelines for colors, fonts, icons, and spacings. With a goal of <strong>organizing the content better and putting it on the web for easy access</strong>, I looked at other style guide examples:</p>
 
              <ul>
-              <li>Guidelines such as <a target="_blank" href="https://material.io/guidelines/">Google Material Design</a>, <a target="_blank" href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/">Apple iOS Human interface Guidelines</a></li>
+              <li>Guidelines such as <a target="_blank" href="https://material.io/guidelines/">Google Material Design</a>, <a target="_blank" href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/">Apple iOS Human Interface Guidelines</a></li>
               <li>UI frameworks like <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>, and <a target="_blank" href="https://www.patternfly.org/">Patternfly</a> (a UI framework for enterprise web applications)</li>
               <li>Design systems such as <a target="_blank" href="https://lightningdesignsystem.com/">Salesforce lightning design system</a>, and <a target="_blank" href="https://ant.design/"> ANT design</a></li>
              
@@ -62,12 +62,12 @@
 
             <h4>Second version — making it copiable</h4>
 
-            <p>I was happy about having an online style reference, but to be honest, it was a MVP — I could not even copy the color hex code, or a font awesome icon. What we need is a living style guide, documenting the styles and components, and keeping them in sync with production code, how exciting is that!</p>
+            <p>I was happy about having an online style reference, but to be honest, it was an MVP — I could not even copy the color hex code or a font awesome icon. What we need is a living style guide, documenting the styles and components, and keeping them in sync with production code, how exciting is that!</p>
 
 
             <p><a href="https://medium.com/@operatino/living-style-guide-tools-in-depth-overview-28cfffb92d05">This article</a> introduces several tools for building the documentation of front-end code. Unfortunately, CSS parser and static style guide generators are too complicated for me. So I took a step back, copied our LESS codes, used a few variables in style guide, learnt <a target="_blank" href="http://ericnish.io/blog/compile-less-files-with-grunt/">Grunt</a> to auto-generate CSS code, and pretended I was using production code for style guide. I also added basic components from Bootstrap. Then I called it, a step towards living style guide, and also made it responsive.</p>
 
-            <h4>Third iteration — clean up production code</h4>
+            <h4>The third iteration — clean up production code</h4>
 
             <p>One of my go-to engineers, also a great friend, shared feedback on my previous style guide.</p>
             <p class="quote">
@@ -82,20 +82,20 @@
               
               </li>
               <img src="./img/styleguide/slack.png"/>
-              <li>Next I organized those colors by usage and color, shared with the team as a joke: <strong>we have 58 shades of gray!</strong> Everyone agreed we need to fix it.
+              <li>Next, I organized those colors by usage and color, shared with the team as a joke: <strong>we have 58 shades of gray!</strong> Everyone agreed we need to fix it.
               <img src="./img/styleguide/coloraudit.png"/>
               </li>
               <li>I started with gray first, picked the most-used values, consolidated similar colors into one, validated background and text colors by contrast ratio, and reduced the gray scales.
               <img src="./img/styleguide/gray.png"/>
               </li> 
-              <li>Then I moved to other colors, font size, and spacing, following similar process: research the best practice, make tradeoff on what to apply, try out, adjust, and decide. The hard part for me was spacing, we had a mix of bootstrap 6px-based grid, 10px grid, and some randomized numbers. I went with 8-pt grid after reading Spec.fm’s <a target="_blank" href="https://spec.fm/specifics/8-pt-grid">8-pt grid</a>, <a target="_blank" href="https://material.io/guidelines/layout/metrics-keylines.html#metrics-keylines-ratio-keylines">Google Material metrics and keylines</a>, and this very detailed article — <a target="_blank" href="https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62">Space in design system</a>, and made the guideline as below for our product.
+              <li>Then I moved to other colors, font size, and spacing, following similar process: research the best practice, make the tradeoff on what to apply, try out, adjust, and decide. The hard part for me was spacing, we had a mix of Bootstrap 6px-based grid, 10px grid, and some randomized numbers. I went with 8-pt grid after reading Spec.fm’s <a target="_blank" href="https://spec.fm/specifics/8-pt-grid">8-pt grid</a>, <a target="_blank" href="https://material.io/guidelines/layout/metrics-keylines.html#metrics-keylines-ratio-keylines">Google Material metrics and keylines</a>, and this very detailed article — <a target="_blank" href="https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62">Space in design system</a>, and made the guideline as below for our product.
               <img src="./img/styleguide/Spacing.jpg"/>
               </li>
-              <li>After defining the variables, I started to touch the code. One engineer walked me through the development process — how to submit pull request (PR) and merge code in production. She also helped me with the naming of variables, explained how to make changes incrementally, and reviewed all my PRs. I learnt a lot and really appreciate her help. Designer and engineer are best friends!</li>
+              <li>After defining the variables, I started to touch the code. One engineer walked me through the development process — how to submit a pull request (PR) and merge code in production. She also helped me with the naming of variables, explained how to make changes incrementally, and reviewed all my PRs. I learnt a lot and really appreciate her help. Designer and engineer are best friends!</li>
              
             </ol>
 
-            <p>At this point I also updated the style guide to reflect all the new variables, and added code & visual-style views of common components. I hoped to include the real implementation code for reusable components, but we have not refactored all the React components. So leave it to the next iteration. :)</p>     
+            <p>At this point, I also updated the style guide to reflect all the new variables and added code & visual-style views of common components. I hoped to include the real implementation code for reusable components, but we have not refactored all the React components. So leave it to the next iteration. :)</p>     
           </div>
 
       
