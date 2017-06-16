@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" type="text/css" />
     <link href="https://fonts.googaleapis.com/css?family=Quattrocento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quattrocento" rel="stylesheet">
     <link rel="stylesheet" href="css/portfolio.css" media="screen" type="text/css" />
   </head>
   <body>          
@@ -47,10 +48,17 @@
               <h4>Background</h4>
               <p>When running a streaming task to process data in real time, users often want to know the current status of the task, and also monitor the progress. In the backend, we generate the status metadata every few seconds. The goal here is to organize streaming information to make it easy for users to consume.       
               </p>
+              
+              <img src="img/databricks/NotebookBefore.jpg" class="imgborder img-responsive img-centered">
+              <p class="text-center smalltext">Before: display state details from raw data</p>
               <h4>Solution</h4>
               <p>A picture is worth a thousand words. After working closely with our engineers, we came up with the following visualizations to facilitate rapid analysis of the recent progress of a streaming task. We also collapse the visualizations by default after incorporating internal users' feedback. Last but not least, I made an icon with different colors to indicate the status of the streaming task, and we also give users an easy way to see more information when hovering over the icon.</p> 
-              <img src="img/databricks/StreamingInfo.jpg" class="img-responsive img-centered"> 
-              <h4>Design Process</h4>              
+               
+               <img src="img/databricks/NotebookAfter.jpg" class="imgborder img-responsive img-centered">
+               <p class="text-center smalltext">After: visualize state progress</p>
+              <!-- <img src="img/databricks/StreamingInfo.jpg" class="img-responsive img-centered"> --> 
+              <h4>Design Process</h4> 
+              <img src="img/databricks/VizProcess.jpg" class="img-responsive img-centered">             
               <p><strong>Expert interview</strong>: To get more context quickly, I sat with one of our streaming experts with the following questions:</p>
               <ul>
                 <li>What each row of metadata mean? How important is it to the user?</li>
@@ -93,6 +101,17 @@
                <p>
                <strong>Add design specs and check in often</strong>: The iterations helped finalize the layout and interaction details for the key mock. I also documented the key decisions we made during the process and explained why we did it in case other stakeholders have questions. After getting a signed off from our broader group, I worked on the design specs - adding other states(loading, empty, error, and etc) and measurements. I also checked in often to clarify questions and revised small details when we got more feedback. 
               </p>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">    
+                <img src="img/databricks/DifferentStates.jpg" class="imgborder img-responsive img-centered">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">    
+                <img src="img/databricks/measurement.jpg" class="imgborder img-responsive img-centered">
+              </div>
+            </div>
+
+              
+
 
               <h4>Outcome</h4> 
               <p>By working closely with our two engineers and getting feedback regularly from other stakeholders, we were able to <strong>design and implement the project in one sprint (2 weeks)</strong>.</p>

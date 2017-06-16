@@ -1,6 +1,11 @@
 /*-- Font --*/
 body{
-  font-family: 'Quattrocento', serif;
+  font-family: 'Roboto', serif;
+}
+article p, .project .subtitle,
+article ul li,
+article ol li{
+  font-family: 'Roboto', sans-serif;
 }
 
 /*-- Utility --*/
@@ -209,6 +214,17 @@ article .quote{
   padding-left: 24px;
   font-style: italic;
   margin: 24px 0px;
+}
+
+article .imgborder{
+   margin-bottom: 8px;
+   border: solid 1px #eee;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+article .smalltext{
+  font-size: 14px;
+  font-style: italic;
 }
 
 
