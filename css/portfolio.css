@@ -1,11 +1,13 @@
 /*-- Font --*/
 body{
-  font-family: 'Roboto', serif;
+  font-family: 'Quattrocento', serif;
 }
+
 article p, .project .subtitle,
 article ul li,
 article ol li{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light;
 }
 
 /*-- Utility --*/
@@ -193,8 +195,8 @@ article p,
 article ul li,
 article ol li
 {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 30px;
   color: #555;
 }
 
