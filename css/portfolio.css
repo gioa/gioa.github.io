@@ -169,6 +169,14 @@ article img{
   margin: 40px 0px;
   text-align: center;
 }
+article .gif{
+padding: 48px;
+background: #283048;  
+background: -webkit-linear-gradient(to left, #859398, #283048);  
+background: linear-gradient(to left, #859398, #283048); 
+
+
+}
 
 article .header h1{
   font-size: 56px;
