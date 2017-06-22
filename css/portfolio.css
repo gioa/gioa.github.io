@@ -159,6 +159,7 @@ a:hover,
   line-height: 24px;
 }
 
+
 /*-- project page--*/
 article .header{
   margin: 64px 0px 40px 0px;
@@ -239,17 +240,17 @@ article .smalltext{
 
 
  .btn-outline, 
- .btn-outline:visited {
+ .btn-outline:visited, 
+ .btn:focus {
   color: #5890FF;
   font-size: 18px;
-  padding: 4px 8px;
+  padding: 8px 12px;
   background-color: transparent;
   border-color: #5890FF;
   margin-top: 20px;
 }
 
-.btn:hover, 
-.btn:focus {
+.btn:hover {
   color:#fff;
   background-color: #5890FF;
 }
