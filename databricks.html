@@ -29,7 +29,7 @@
             <h3 class="text-center">Background</h3>
             <div class="desc">
               <p>
-                Databricks provides a unified analytics platform to accelerate business outcomes by unifying data science, engineering, and business. I joined the company since September 2015 and did several end-to-end projects to facilitate a more seamless experience of exploring and transforming big data. See below a high-level view of who we are building for and how our product works. 
+                Databricks provides a unified analytics platform to accelerate innovation by unifying data science, engineering, and business. I joined the company since September 2015 and have worked on several released features, and touched almost every part of the product. See below a high-level view of who we are building for and how our product works. 
               </p>
               <img src="img/databricks/userneeds.jpg" class="img-responsive img-centered">
             </div>
@@ -37,71 +37,38 @@
             <h3 class="text-center">Role</h3>
             <div class="middledesc">
             <p>
-              A designer at a startup wears multiple hats. I not only drive product design from ideation to implementation but also use our product for data-informed designs. For brevity, I listed a case study as below to demonstrate I approach designs at Databricks.
+              A designer at a startup wears multiple hats. I not only drive product design from ideation to implementation but also use our product for data-informed designs. For brevity, I listed 2 case studies as below to demonstrate how I approach designs at Databricks.
             </p>          
             </div>
 
+            <!-- case study 1 -->
             <h3 class="text-center">Visualizing streaming information case study</h3>
             <img src="img/databricks/viz.jpg" class="img-responsive img-centered">
             <div class="middledesc"> 
               <h4>The Challenge</h4>
-              <p>When running a streaming task to process data in real time, users often want to know the current status of the task, and monitor the progress. In the backend, we generate the status metadata every few seconds. The goal is to organize streaming information to make it easy for users to consume.       
+              <p>Structured streaming is one of the strategic projects we have been working on since last year to address the popular real-time data processing use case. As the backend got more mature, we started to think about the interface: when running a streaming task in our notebook, how to inform the user what’s going on?        
               </p>
               
               <img src="img/databricks/NotebookBefore.jpg" class="imgborder img-responsive img-centered">
               <p class="text-center smalltext">Before: display state details from raw data</p>
               <h4>Solution</h4>
-              <p>A picture is worth a thousand words. I worked closely with our engineers and came up with the following visualizations to show the state and the progress of a streaming task. </p> 
+              <p>It was hard to consume the raw data generated every few seconds (see the image above). So we organized the information and visualized the progress of a streaming task to give users a better view on their  task. </p> 
                
                <img src="img/databricks/NotebookAfter.jpg" class="imgborder img-responsive img-centered">
                <p class="text-center smalltext">After: visualize state progress</p>
               <!-- <img src="img/databricks/StreamingInfo.jpg" class="img-responsive img-centered"> --> 
               <h4>Design Process</h4> 
               <img src="img/databricks/VizProcess.jpg" class="img-responsive img-centered">             
-              <p><strong>Expert interview</strong>: To get more context quickly, I sat with one of our streaming experts with the following questions:</p>
-              <ul>
-                <li>What each row of metadata mean? How important is it to the user?</li>
-                <li>What questions may the users have on their streaming task? And why?</li>
-                <li>What other similar products shall I look into?</li>
-                <li>Once we have some ideas, who shall I talk to internally to get feedback?</li>
-              </ul>
+              <p><strong>Expert interview</strong>: The key challenge for me was: how can I organize the streaming information if I know nothing about it? Luckily we have a few experts. So I asked them lots of questions to understand the data and its value to the user.</p>
+
               <p><br>
-              <strong>More research on my own</strong>: After the expert interview, I searched the terminologies I did not understand well earlier to get a better picture of the domain. I also looked up similar products to explore the visualizations for showing the progress.</p>
+              <strong>More research on my own</strong>: After the expert interview, I searched the terminologies I did not understand well to get a better picture of the domain. I also looked up similar products to explore the visualizations for showing the progress.</p>
                <img src="img/databricks/streamingContext.jpg" class="img-responsive img-centered">
 
-              <p><strong>Design together with the engineers</strong>: Next I sat with our two engineers from the streaming team (one of them will implement the designs), and shared with them the research I had done. We started to whiteboard the information structure and the visualizations. At last, we reached consensus on:</p>
-              <ul>
-                <li>What information we need to surface and what to hide</li>
-                <li>What graphs make more sense</li>
-                <li>What are the possible layouts (which one works best was not decided yet)</li>
-                <li>How it fits in the current UI</li>
-              </ul>
+              <p><strong>Design together with the engineers</strong>: It was helpful to whiteboard the information structure and the visualizations with the engineers. It clarified questions, allowed us to build on each other's ideas and reach consensus quickly.</p>
                <img src="img/databricks/Process.jpg" class="img-responsive img-centered">
               <p>
-               <strong>Iterations</strong>: With those concepts, I went back to work in Sketch, explored different layouts, collected feedback from a broader group and iterated quickly. These iterations helped finalize the layout and interaction details. I also documented the decisions we made and why we made it in case other stakeholders have questions.
-              </p>
-               <div class="row streamingicon text-center">
-                  <div class="col-lg-4">
-                    <svg width="60" height="60" viewBox="5 0 60 60">
-                      <path class="wave" fill="none" stroke="#16B169" stroke-width="4" stroke-linecap="round" d="M -6 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" $=0$=010.0" />
-                    </svg>
-                    <p>Active: processing data</p>
-                  </div>
-                  <div class="col-lg-4">
-                      <svg width="60" height="60" viewBox="5 0 60 60">
-                      <path class="wave-2" fill="none" stroke="#16B169" stroke-width="4" stroke-linecap="round" d="M -6 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" $=0$=010.0" />
-                    </svg>
-                    <p>Active: waiting for data/trigger</p>
-                  </div>
-                  <div class="col-lg-4">
-                      <svg class="terminated" width="60" height="60" viewBox="5 0 60 60">
-                      <path class="wave-2" fill="none" stroke="#c0c0c0" stroke-width="4" stroke-linecap="round" d="M -6 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" $=0$=010.0"/>
-                      <p>Terminated</p>
-                  </div>
-                   <p class="text-center smalltext">A streaming icon I made</p>
-               </div>
-               <p>
-               <strong>Add design specs and check in often</strong>: After getting a signed off from our broader group, I worked on the design specs - adding other states (loading, empty, error, and etc) and measurements. I also checked in often to clarify questions and revised small details. 
+               <strong>Iterate and Ship It</strong>: I went back to work in Sketch, explored different layouts, collected feedback from a broader group and iterated quickly. After getting a signed off from our broader group, I added the design specs and checked in often until we shipped it.
               </p>
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">    
@@ -112,17 +79,64 @@
               </div>
             </div>
 
-              
-
 
               <h4>Outcome</h4> 
-              <p>By working closely with our two engineers and getting feedback regularly from other stakeholders, we were able to <strong>design and implement the project in one sprint (2 weeks)</strong>.</p>
+              <p>By working closely with our two engineers and getting feedback regularly from other stakeholders, we were able to <strong>design and implement the project in one sprint (2 weeks)</strong>. The visualization also helped us <a target="_blank" href="https://databricks.com/blog/2017/05/18/taking-apache-sparks-structured-structured-streaming-to-production.html"> take structured streaming to production</a>.</p>
             </div>
 
-            <h3 class="text-center">Big Picture</h3>
+            <!-- case study 2 -->
+            <h3 class="text-center">Redesigning Cluster List Page Case Study</h3>
+            <!-- <img src="img/databricks/ClusterAfter.jpg" class="img-responsive img-centered"> -->
+            <br>
+            <div class="middledesc"> 
+              <h4>The Challenge</h4>
+              <p>Clusters are groups of computers treated as a single computer to execute code and process data. The cluster list page is the second most visited page in the product, but after adding various new features, soon it became cluttered and outdated. How can we redesign it to improve its usability?
+              </p>
+              
+              <img src="img/databricks/ClusterBefore.jpg" class="imgborder img-responsive img-centered">
+              <p class="text-center smalltext">Before</p>
+              <h4>Solution</h4>
+              <img src="img/databricks/ClusterAfter.jpg" class="imgborder img-responsive img-centered">
+               <p class="text-center smalltext">After</p>
+              <p> In the new design, we made the following changes: 
+
+                   <ul>
+                      <li><Strong>Add filter, sorting, and creator column.</strong> Users can easily find his/her own cluster and take actions.</li>
+                  
+                      <li>Change 2 sections of active and terminated clusters to interactive and jobs clusters.
+                        <ul>
+                            <li><strong>Business needs</strong>: Easier for users to understand interactive and job clusters are priced differently.</li>
+                            <li><strong>Different personas</strong> (data engineer vs. data scientist): The jobs clusters won't come in data scientists' way. </li>
+                            <li><strong>Reflect new conceptual model</strong>: With us introducing the persistent cluster concept, users often start a terminated cluster. With the new design, active and terminated clusters won't jump around in 2 different tables. </li>
+                        </ul>
+                      </li>
+                                       
+                      <li><strong>Reduce clutter and inconsistency.</strong> Remove default cluster column (legacy code). Group all the links and actions to the right side, and show actions when hover. </li>
+                    </ul>
+              </p> 
+               
+               
+              <!-- <img src="img/databricks/StreamingInfo.jpg" class="img-responsive img-centered"> --> 
+              <h4>Design Process</h4> 
+              <img src="img/databricks/ProcessCluster.jpg" class="img-responsive img-centered"> 
+              <p>The solution may look simple, but it took a ton of consideration and discussion.</p>  
+              <ul>
+                <li><p><strong>User Research</strong>: First I collected all the related feedback from emails, forums, our JIRA system, and previous research to see the common patterns.</p></li>
+                <li><p><strong>Data Analysis</strong>: I also wrote a few queries to see the usage data and where the traffic comes and goes. Based on the data we decided to keep the links and remove the caret.</p></li>
+                <li><p><strong>Design in a small group</strong>: I worked closely with a product manager and an engineer to define the scope and brainstorm ideas. </p></li>
+                <li><p><strong>Communicate broadly about the changes</strong>: Since the cluster list page is a common used page, everyone inside the company may have opinions on its new design. It is important to broadcast the changes so people can share their feedback as early as possible. As we expected, we got a lot of feeback and were able to address those at an early stage. </p></li>
+                <li><p><strong>Iteration</strong>: Based on the feedback we knew it was hard to take columns away. So we explored other techniques to make it look less cluttered, such as truncation and hover actions. At last we agreed on one version and kept people updated about the changes.</p></li>
+                <li><p><strong>Ship It</strong>: After the implementation, we had another round of feedback coming in after people played with it. For some we explained the rational behind and defended the design. For others, we had a quick discussion to pick others' brain and improve the design further.</p></li>
+              </ul>         
+              
+              <h4>Outcome</h4> 
+              <p>The revamp of cluster list page provided more features (filter and sorting on the table) to our users and got a fresh look which we hope our customers love. The design took 3 weeks but it's all worth it as the user experience ends up better.</p>
+            </div>
+
+            <h3 class="text-center">A Few More Words</h3>
             <div class="desc">
               <p>
-              Designing in a complex domain is challenging. But working together with the teams makes it easier. I am happy to share more about the scenes behind our <a href="https://docs.databricks.com/release-notes/product/index.html">released features</a>, or talk about the below topics. </p>
+              Designing in a complex domain is challenging. But working together with the awesome teams makes it easier. I am happy to share more about the scenes behind our <a href="https://docs.databricks.com/release-notes/product/index.html">released features</a>, or talk about the below topics. </p>
               <ul>
                 <li>Designing enterprise software</li>
                 <li>Design culture at a startup</li>
@@ -140,20 +154,26 @@
           </div> <!-- col-lg-10  -->    
       </article>
 
+
       <div class="footer">
         <ul class="list-inline">
-          <li><a target="_blank" href="https://www.facebook.com/xiefen"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <!--  if (you.likeMyWork && you.haveDribbbleInvite && you.sendInviteTo("xfjoy0223@gmail.com"))
-                  me.appreciate("A LOT!!!")
-                else
-                  me.lol("Are you still reading?")
-          -->
-          <!--  <li><i class="fa fa-dribbble" aria-hidden="true"></i></li> -->
-          <li><a target="_blank" href="https://www.linkedin.com/in/xiefen/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li>
+            <a target="_blank" href="https://dribbble.com/xiefen">
+              <i class="fa fa-dribbble"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/xiefen">
+              <i class="fa  fa-facebook-f"></i>
+            </a>
+          </li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/xiefen/"><i class="fa fa-linkedin"></i></a></li>
+
         </ul>
-        <!--  <p class="pull-right">Copyright © 2017 Fen Xie</p> -->
+        <!-- <p class="pull-right list-inline">Copyright © 2017  Fen Xie</p> -->
         <p class="pull-right list-inline">Handcrafted with <i class="fa fa-heart red"></i> by Fen Xie</p>
-      </div>
+
+      </div><!-- End of footer -->
     </div> <!-- End of container -->
 
     <script>
