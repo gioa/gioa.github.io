@@ -1,0 +1,300 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Project: Making big data simple</title>
+  <meta name="description" content="Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="joyx.design">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+
+<!--Style-->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+</head>
+
+<body>
+
+  <!--Preloader-->
+  <div class="preloader" id="preloader">
+      <div class="item">
+        <div class="spinner">
+        </div>
+      </div>
+  </div>
+
+
+  <!--Header-->
+  <header id="full">
+    
+      <div class="logo" id="full"><a href="./index.html">
+        <img src="./img/logo.png" alt="Joy"></a>
+      </div>
+      
+       <ul class="header-nav">  
+        <li><a href="./index.html" class="active">Work</a></li>    
+        <li><a href="./about-me.html">About me</a></li>
+        <li><a target="_blank" href="./joyx_resume.pdf">Resume</a></li>
+      </ul>
+        
+  </header>
+
+  <div class="clear"></div>
+
+  <!--Content-->
+  <div class="content" id="ajax-content">
+
+        <div class="text-intro">
+
+          <h1>Making Big Data Simple</h1> 
+                    
+          <div class="one-column">
+              <img src="img/bigdata/myrole.png" width="80%">
+          </div>
+
+
+          <div class="two-column">
+            <p>Databricks is a unified analytics platform that allows data scientists, data engineers, and business people to get value out of big data. During my time there, I focused on designing various features that feel simple and helped bring our MVP to a full-fledged product, which unblocks our 10x business growth.</p>
+          </div>   
+                 				  
+          <div class="clear"></div> 
+
+			    <img class="image" src="img/bigdata/HeroImage.png" width="100%">
+
+          <div class="one-column">
+            <p>THE CHALLENGE</p>
+          </div>
+
+
+          <div class="two-column">
+              <p class="title">How to go fast and high quality while you are half the team, or the solo?</p>
+              <p>Designing at a big data startup is challenging in many ways. Besides the complex technical domain and enterprise features, one also needs to keep shipping to accommodate the company's fast growth. How to go fast and high quality while you are half of the design team, or sometimes the only designer there? I'd like to share my learnings through 3 case studies.</p>
+          </div>
+
+           <div class="one-column">
+            <p>THE CASE STUDIES</p>
+          </div>
+
+          <div class="two-column">
+              <p class="title">3 lessons learned while incrementally making cluster management easier</p>
+              <p>What is a cluster? When it comes to big data, both analytics and ETL(Extract, Transform, Load) workloads require computing resources (computers) to handle the huge amount of data. We call the group of computers a cluster, and our product allows users to provision clusters from the cloud.</p>
+          </div>
+
+            <!-- story 1 -->
+          <div class="one-column">
+              <p><strong>Lesson 1:</strong> Feedback and iterations get your design a long way</p>
+          </div>
+
+
+          <div class="two-column">
+              <p class="title">Scale cluster creation</p>
+              <p>At the time I joined, our cluster UI was very basic. It includes a list page and a few dialogs (for cluster creating and editing). My first design task was to add access control, so the user can control who has what permissions on their cluster.</p>
+              <img class="image" src="img/bigdata/Case1DesignTask.png" width="100%">
+              <p>The feature itself is very straightforward, but when adding permission settings on the cluster creation dialog, the dialog got too long. So I explored a tab layout in the dialog and iterated based on hallway testings - most feedback favored the tab layout design as it looks cleaner.</p>
+              <img class="image" src="img/bigdata/Case1DesignExploration.png" width="100%">
+              <p>One engineer asked,</p><br/>
+              <p class = "quote">🧐-  why not move it to a full page design? <br/></p><br/>
+              <p>I was like,</p><br/>
+              <p class = "quote">🤩- Why did not I think of that? </p>
+              <br/><br/>
+              <p>So I moved the dialog to a full page design and sent together with a revised tab design for broader feedback. Feedback emails flooded in. </p>
+              <p>
+               <ul class="list">
+                  <li>Some engineers liked full page since it offers more space and scalability. It also lets user aware of all the configurations. </li>
+                  <li>Some concerned the information overload for new users on the full page - most of the time, new users do not know, or care about what access control is.</li>
+                  <li>Another suggestion came up: wizard design, which offers new users guidance and allows skipping steps. </li>
+                </ul>
+              </p>    
+
+              <br/>
+              <p>A PM, an engineer and I gathered and tried to fix the problem of <strong>"a single giant page with lots of settings"</strong>. While talking about our principle of "simple things simple, and complex things possible", suddenly it clicked! Why not hide all the advanced in "show advanced" section; then use tab layout inside to group things.</p>
+              <img class="image" src="img/bigdata/Case1DesignFinal.png" width="100%">
+              <p>
+              We shared the design again and this time no objection. We also sent 4 options to external users for testing. The aha moment solution won. The feedback aligned with what we learned internally. </p>   
+              <br/>
+              <br/>
+              <p class="quote">"Some users may not be interested in changing advanced settings at all, and for those who do, it is very quick to access." <br/><br/>
+              "When a user is on the advanced setting page, he could also change basic setting simultaneously."
+              </p>
+              <br/>
+              <br/>
+
+              <p>By incorporating feedback and iterating with the team, we reached a scalable design, which I appreciated every time I added new features to this cluster UI.</p>
+
+          </div>
+          <!-- end of story 1 -->
+        </div>
+        <!-- end of text-intro -->
+
+        <div class="clear"></div> 
+
+
+            <!-- story 2 -->
+            <div class="fullSection">
+              <div class="text-intro">
+                <div class="one-column">
+                  <p><strong>Lesson 2:</strong> Think more and design less</p>
+                </div>
+
+
+                <div class="two-column">
+                    <p class="title">Persist cluster configuration</p>
+                    <p>Incrementally we added another 4 tabs and 10+ input fields on the cluster UI. It became impossible for users to fill in the form every time they create a cluster. Customers started to ask for cluster template feature - they want to create a cluster from a template.
+                    <br/><br/>
+                    Before jumping into the feature design. We asked why they want a cluster template? 
+                    </p>
+                    <br/><br/>
+                    <p class = "quote">
+                    I want to reuse the cluster configurations I created before.</p><br/><br/>
+                    <p class = "quote">
+                    It is difficult for non-advanced users to create a cluster, they do not know what parameters to use and what's the right size. 
+                    </p>
+                    <br/><br/>
+                    <p>
+                    Instead of giving customers another list to manage cluster configurations (besides the existing running and terminated cluster list), we proposed starting and stopping a cluster - so the user can simply start a cluster to reuse its previous configuration; for the second use case, an admin can create a cluster for non-advanced users, and allow them to start it if needed. By doing this, there is only one cluster list, easy to manage.</p>
+                    <figure>
+                      <img class="image" src="img/bigdata/Case2DesignFinal.png" width="100%">
+                      <figcaption>Start cluster configuration</figcaption>
+                    </figure>
+                    
+                    
+                    <br/>
+                    <p>Comparing to a list design which introduces extra cognitive load and more management effort in the long run, the new design is simple - add a pair of start-stop icons. Sometimes, we need to think more to design less. </p>
+                </div>
+
+                <div class="clear"></div> 
+
+              </div> 
+              <!-- end of text-intro -->
+            </div>
+            <!-- end of story 2 -->
+            <div class="clear"></div> 
+
+            <!-- story 3 -->
+            <div class="text-intro">
+              <div class="one-column">
+                <p><strong>Lesson 3:</strong> Co-design with the team</p>
+              </div>
+
+
+              <div class="two-column">
+                  <p class="title">Clean up clutter</p>
+                  <p>As cluster creation form got complex, the cluster list page also became cluttered and outdated. How to redesign it to improve its usability? I sat together with an engineer and a PM to brainstorm ideas.</p>
+                  <br/>
+                  
+                  <p>
+                   <ul class="list">
+                      <li>First, why do people come to this page? Admins are interested in running clusters, their size and type, to get a sense of the cost. While data scientists want to quickly find the cluster they care about, to start, configure, or debug. </li>
+                      <li>Next, we looked all the feedback people have reported, and the usage data (what users do) to guide our design decisions. </li>
+                      <li>Then we shared a proposed mockup to get broader feedback. Cluster list page is the second most visited page in the product. Everyone inside the company may have opinions on its redesign. </li>
+                      <li>The moment feedback came in, I felt regret for asking. How to accommodate all the different requests while keeping the UI simple? </li>
+                      <li>Thanks to the super collaborative team, we came up with a better solution that made everyone happy. And the cluster list UI got a fresh look. </li>
+                    </ul>
+                  </p>  
+
+                  <figure>
+                      <img class="image" src="img/bigdata/Case3DesignBefore.png" width="100%"> 
+                      <figcaption>Before</figcaption>
+                  </figure>
+
+                  <figure>
+                      <img class="image" src="img/bigdata/Case3DesignAfter.png" width="100%">
+                      <figcaption>After</figcaption>
+                  </figure>
+                 
+              </div>
+            </div>
+              <!-- end of story 3 -->
+
+            <div class="clear"></div> 
+            <div class="fullSection graybg">
+              <div class="output">
+                    <p class="title">THE RESULT OF CASE STUDIES</p>
+                    <p class="question">The rewarding part is not only the learnings. Ultimately we are building a product that helps organizations and their people do their work better. Knowing customers getting value out of the features often makes my day.</p>
+
+                    <br/>
+                    <div class = "result">
+                      <div class="three-column">
+                        <div class="number">10+</div>
+                        <div class="desc"><p>features built on top of the cluster creation layout</p></div>
+                      </div>
+                      <div class="three-column">
+                        <div class="number">90%</div>
+                        <div class="desc">launched clusters are from Cluster Start</div>
+                      </div>
+                      <div class="three-column">
+                        <blockquote>
+                        Fast search, less clutter, awesome work!
+                        </blockquote>
+                        <div class="desc">Quote from CEO</div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+
+            <div class="clear"></div> 
+		        <div class="prev-next">
+		        
+		          <div class="prev-button"><a href="./index.html">Back to work</a></div>
+		          <div class="next-button"><a href="designingMLFlow.html">Next: Designing MLFlow</a></div>
+		
+		        </div> <!--prev-next-->
+
+
+       
+        
+    </div> <!--content-->
+
+
+  <!--Footer-->
+
+  <footer>
+
+    <div class="footer-margin">
+      <div class="social-footer">
+        <a href="https://dribbble.com/xiefen"><i class="fa fa-dribbble"></i></a>
+        <a href="https://www.facebook.com/xiefen"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/xiefen/"><i class="fa fa-linkedin"></i></a>
+      
+      </div>     
+      <div class="copyright">© Copyright 2018 Fen (Joy) Xie. All Rights Reserved.</div>    
+    </div>
+
+  </footer>
+
+
+
+<!--Scripts-->
+
+  <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>  
+  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
+  <script src="js/jquery.jkit.1.2.16.min.js"></script>
+ 
+  <script src="js/script.js" type="text/javascript"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93347403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-93347403-1');
+  </script>
+</body>
+</html>
