@@ -78,6 +78,9 @@
     max-width:800px;
   }
 
+  .half-half iframe{
+    transform: scale(0.5);
+  }
 
   /*
   **************************
@@ -144,9 +147,10 @@
     padding-right: 15px;
     padding-left: 15px;
   }
- 
-
-
+  
+  .half-half iframe{
+    transform: scale(0.5);
+  }
   /*
   **************************
   Portfolio Grid
@@ -208,8 +212,11 @@
   }
   
   ul.header-nav{
-    width:50%;
+    /*width:50%;*/
   
+  }
+  .content .smallImage{
+    width: 100%;
   }
   
   header li > a{
@@ -217,8 +224,17 @@
     padding-left: 15px;
   }
  
-  .one-column, .two-column, .three-column{
+  .one-column, .two-column, .three-column, .half-half{
     width:100%;
+  }
+
+  .half-half{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .half-half iframe{
+    transform: scale(0.8);
   }
   
   .contact-one, .contact-two, .contact-three{
@@ -243,6 +259,10 @@
   
   #footer-left{text-align:center;}
 
+  header li > a{
+    padding-right:12px;
+    padding-left:12px;
+  }
   /*
   **************************
   Portfolio Grid
@@ -304,8 +324,17 @@
     display:none;
   }
  
-  .one-column, .two-column, .three-column{
+  .one-column, .two-column, .three-column, .half-half{
     width:100%;
+  }
+
+  .half-half{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .half-half iframe{
+    transform: scale(0.5);
   }
   
   .contact-one, .contact-two, .contact-three{
@@ -333,6 +362,15 @@
   .content .text-intro h1{
     font-size:33px; 
     line-height:50px;
+  }
+
+  header li > a{
+  padding-right:12px;
+  padding-left:12px;
+  }
+
+  .content .smallImage{
+    width: 100%;
   }
 
   /*
