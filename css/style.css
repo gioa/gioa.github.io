@@ -139,15 +139,15 @@ header.boxed{
 	transition: background 0.2s ease-in; 
 }
 
-header.boxed .header-margin{
+/*header.boxed .header-margin{
   width:1140px;
   margin:0 auto;
 }
 
 header.boxed .header-margin-mini{
-  width:90%; /*todo*/
+  width:90%; 
   margin:0 auto;
-}
+}*/
 
 
 header a{
@@ -435,6 +435,10 @@ fullSection related
   font-style: italic;
 }
 
+.content .bluebg .text-intro figcaption{
+  color: rgba(255,255,255,0.8);
+}
+
 .content .text-intro .two-column img{
   width: 100% !important;
   margin: 40px 0px;
@@ -451,6 +455,11 @@ fullSection related
   line-height: 20px;
   color: #aaa;
 }
+
+/*.content .text_highlight{
+  font-weight:600;
+  color:#333;
+}*/
 
 blockquote {
   font-style: italic;
