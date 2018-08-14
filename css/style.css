@@ -322,8 +322,11 @@ fullSection related
 
 .whitebg{
   background-color: #fff;
-  text-align: center;
   margin: 0px auto !important;
+}
+
+.center {
+  text-align: center;
 }
 
 .output {
@@ -574,7 +577,6 @@ PORTFOLIO GRID
   overflow:hidden;
 }
 
-
 li.grid-item{
   width:360px;
   position:relative;
@@ -582,7 +584,49 @@ li.grid-item{
   padding:15px;
 }
 
-.grid-hover{
+.grid-item .item-text{
+  padding: 16px;
+  color: #333;
+}
+.grid-item .item-text .title{
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 900;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.grid-item .item-text .desc{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 8px;
+/*  border-bottom: 1px solid #eee;*/
+
+}
+.grid-item .item-text .category{
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 8px;
+  color: #888;
+}
+
+.grid-item a:hover{
+  cursor: pointer;
+}
+
+.grid-item .item-hover{
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+}
+
+.grid-item .item-hover:hover{
+  display: block;
+  box-shadow: 0 20px 20px rgba(0,0,0,.16);
+  transform: translate(0,-8px);
+  transition-delay: 0s !important;
+}
+
+/*.grid-hover{
   position: absolute;
   width:360px;
   height: 100%;
@@ -622,7 +666,7 @@ li.grid-item{
   letter-spacing:1px;
   font-weight:400;
   line-height:50px;
-}
+}*/
 
 li.grid-item img{
   width:360px;
