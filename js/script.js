@@ -40,7 +40,7 @@ Ajax link page transitions
 					setTimeout(function(){
 							
             $('#ajax-content').html($(data).filter('#ajax-content').html());
-            $('#ajax-sidebar').html($(data).filter('#ajax-sidebar').html());
+            // $('#ajax-sidebar').html($(data).filter('#ajax-sidebar').html());
 
 						$('body').waitForImages({
 							finished: function() {
@@ -99,8 +99,8 @@ function CheckScripts() {
 
   $(document).ready(function(){
     preloaderCheck();
-    Typewriting();
-    sidebarhero();
+    // Typewriting();
+    // sidebarhero();
   });
 
 }

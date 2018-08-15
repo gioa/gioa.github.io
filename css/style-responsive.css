@@ -32,12 +32,6 @@
   **************************
   */
 
-  #portfolio-sidebar{
-
-    width: 710px !important;
-    padding-right: 320px;
-  }
-
   .portfolio-grid{
 
     width:1030px;
@@ -89,11 +83,6 @@
   **************************
   */
 
-  #portfolio-sidebar{
-
-    width: 580px !important;
-    padding-right: 250px;
-  }
 
   .portfolio-grid{
 
@@ -157,11 +146,6 @@
   **************************
   */
 
-  #portfolio-sidebar{
-
-    width:630px !important;
-    padding-right: 0;
-  }
 
   .portfolio-grid{
     width:630px;
@@ -269,11 +253,6 @@
   **************************
   */
 
-  #portfolio-sidebar{
-
-    width:430px !important;
-    padding-right: 0;
-  }
 
   .portfolio-grid{
     width:430px;
@@ -379,11 +358,6 @@
   **************************
   */
 
-  #portfolio-sidebar{
-
-    width:310px !important;
-    padding-right: 0;
-  }
 
   .portfolio-grid{
     width:310px;
