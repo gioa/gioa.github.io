@@ -98,7 +98,7 @@
 
           <div class="two-column">
             
-            <p>At Databricks we have a small two-person design team. I lead the design on cluster management and work closely with product managers and engineers to deliver value. Among the 20+ released features on cluster UI, I picked three to show case how we make cluster management simple incrementally.</p>
+            <p>At Databricks we have a small two-person design team. I lead the design on cluster management and work closely with product managers and engineers to ship features. Among the 20+ released features on cluster UI, I picked three to show case how we make cluster management simple incrementally.</p>
           </div>
 
             <!-- story 1 -->
@@ -111,32 +111,30 @@
 
           <div class="two-column">
               <p class="title">Simple things simple, complex things possible</p>
-              <p>At the time I joined, our cluster UI was very basic. It includes a list page and a few dialogs (for cluster creating and editing). My first design task was to add access control, so the user can control who has what permissions on their cluster.</p>
-              <img class="image" src="img/bigdata/Case1DesignTask.png" width="100%">
-              <p>The feature itself is very straightforward, but when adding permission settings on the cluster creation dialog, the dialog got too long and seems daunting to data scientists. So I explored a tab layout in the dialog and iterated based on hallway testings - most feedback favored the tab layout design as it looks cleaner.</p>
-              <img class="image" src="img/bigdata/Case1DesignExploration.png" width="100%">
-              <p>One engineer asked,</p><br/>
-              <p class = "quote">🧐-  why not move it to a full page design? <br/></p><br/>
-              <p>I was like,</p><br/>
-              <p class = "quote">🤩- Why did not I think of that? </p>
-              <br/><br/>
-              <p>So I moved the dialog to a full page design and sent together with a revised tab design for broader feedback. Feedback emails flooded in. </p>
-              <p>
-               <ul class="list">
-                  <li>Some engineers liked full page since it offers more space and scalability. It also lets user aware of all the configurations. </li>
-                  <li>Some concerned the information overload for new users on the full page - most of the time, new users do not know, or care about what access control is.</li>
-                  <li>Another suggestion came up: wizard design, which offers new users guidance and allows skipping steps. </li>
-                </ul>
-              </p>    
+              <p>Back in 2015, our cluster UI was very basic. It includes a list page and dialogs for cluster creating and editing. My first design task was to add access control, so the user can control who has what permissions on their cluster.</p>
+           
+              <figure>
+                    <img class="image" src="img/bigdata/Case1DesignTask.png" width="100%">
+                    <figcaption>Before</figcaption>
+              </figure>
 
-              <br/>
-              <p>A PM, an engineer and I gathered and tried to fix the problem of <strong>"a single giant page with lots of settings"</strong>. While talking about our principle of "simple things simple, and complex things possible", suddenly it clicked! Why not hide all the advanced in "show advanced" section; then use tab layout inside to group things.</p>
-              <img class="image" src="img/bigdata/Case1DesignFinal.png" width="100%">
+              <p>The feature itself is very straightforward, but when adding permission settings on the cluster creation dialog, the dialog got too long and seems daunting to data scientists. So I explored a tab layout in the dialog and did a few hallway testings - most feedback favored the tab layout design as it looks cleaner.</p>
+
+               <figure>
+                    <img class="image" src="img/bigdata/Case1DesignExploration.png" width="100%">
+                    <figcaption>Explorations</figcaption>
+              </figure>
+              
+              <p>The aha moment hit me when an engineer asked the question, why not put it on a full page? We quickly moved to this full page design since it offers more space and scalability. To make "simple things simple, and complex things possible", we also hide all the advanced in "show advanced settings" section; and use tabs inside to group settings.</p>
+              <figure>
+                    <img class="image" src="img/bigdata/Case1DesignFinal.png" width="100%">
+                    <figcaption>After</figcaption>
+              </figure>
+              
               <p>
-              We shared the design again and this time no objection. We also sent 4 options to external data scientists for testing. The aha moment solution won. </p>
               <br/>
               <p>
-              A bonus point is, we also reached a scalable design, which I appreciated every time I added new features to this cluster creation UI.</p>
+              External users also favored this design. It is very scalable, and lays a solid foundation for making simple things simple, and complex things possible. </p>
 
           </div>
           <!-- end of story 1 -->
@@ -204,7 +202,7 @@
                       <li>First, why do people come to this page? Admins are interested in running clusters, their size and type, to get a sense of the cost. While data scientists want to quickly find the cluster they care about, to start, configure, or debug. </li>
                       <li>Next, we looked all the feedback people have reported, and the usage data (what users do) to guide our design decisions. </li>
                       <li>Then we shared a proposed mockup to get broader feedback. Cluster list page is the second most visited page in the product. Everyone inside the company may have opinions on its redesign. </li>
-                      <li>The moment feedback came in, I felt regret for asking. How to accommodate all the different requests while keeping the UI simple? </li>
+                      <li>The feedback flooded in. How to accommodate all the different requests while keeping the UI simple? </li>
                       <li>Thanks to the super collaborative team, we came up with a better solution that made everyone happy. And the cluster list UI got a fresh look. </li>
                     </ul>
                   </p>  
@@ -276,7 +274,7 @@
         <a href="https://www.linkedin.com/in/xiefen/"><i class="fa fa-linkedin"></i></a>
       
       </div>     
-      <div class="copyright">© Copyright 2018 Fen (Joy) Xie.</div>    
+      <div class="copyright">© Fen (Joy) Xie.</div>    
     </div>
 
   </footer>
