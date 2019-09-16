@@ -369,13 +369,17 @@ fullSection related
 }
 
 .bluebg{
-  background-color: #2FB3E2;
-  color: #fff !important;
-  padding: 80px 0px;
+  background-color: #F5FCFD;
+  color: #444 !important;
+  padding: 40px 0px;
+}
+
+.fullSection .bluebg .one-column, .fullSection .bluebg .two-column{
+  margin:40px auto;
 }
 
 .content .bluebg .text-intro p{
-  color:#fff;
+  color:#333;
 }
 
 .graybg{
@@ -389,6 +393,12 @@ fullSection related
   background-color: #fff;
   margin: 0px auto !important;
 }
+
+.ltgraybg{
+  background-color: #fafafa;
+  margin: 0px auto !important;
+}
+
 
 .center {
   text-align: center;
@@ -413,6 +423,8 @@ fullSection related
 .fullSection .one-column, .fullSection .two-column{
   margin: 80px auto;
 }
+
+
 
 .content .text-intro p.title{
   font-weight:600;
@@ -473,6 +485,17 @@ fullSection related
 }
 
 
+/*for project MLflow only*/
+.storyboard{
+  padding: 80px 0px;
+  
+}
+
+.storyboard img{
+  margin: 40px auto; 
+  width: 100%;
+}
+
 .content .text-intro .oneColumnImage{
   width: 100%;
 }
@@ -503,9 +526,9 @@ fullSection related
   font-style: italic;
 }
 
-.content .bluebg .text-intro figcaption{
+/*.content .bluebg .text-intro figcaption{
   color: rgba(255,255,255,0.8);
-}
+}*/
 
 .content .text-intro .two-column img{
   width: 100% !important;

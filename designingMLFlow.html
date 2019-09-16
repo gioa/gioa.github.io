@@ -63,7 +63,7 @@
 
         <h1 class="hassubtitle">Designing MLFlow</h1>             
         <div>
-          <p>An open source framework for the complete Machine Learning lifecycle</p>
+          <p>An open source platform for the machine learning lifecycle</p>
         </div>
         <div class="clear"></div> 
       </div>
@@ -82,7 +82,7 @@
 
           <div class="two-column">
             <p class="title">How to simplify machine learning development to democratize AI?</p>
-            <p>In the era of Artificial Intelligence, only a few companies are leveraging machine learning to improve the user experience. Why is that? As our CTO Matei Zaharia said in a blog post of introducing MLFlow:</p>
+            <p>In the era of artificial intelligence, only a few companies are leveraging machine learning to deliver the business impact. Why is that? As our CTO Matei Zaharia said in a blog post of introducing MLFlow:</p>
             <br/><br/>
             <p class = "quote">Everyone who has tried to do machine learning development knows that it is complex.</p>
             <br/><br/>
@@ -94,77 +94,48 @@
           </div>
           <div class="two-column">
             <p class="title">As a researcher</p>
-            <p>I collaborate with my design manager and ML(machine learning) product managers to profile the ML persona and visualize the user journey. </p>
+            <p>I collaborated with my design manager and machine learning (ML) product managers to profile the ML persona and visualize the user journey. </p>
             <br/><br/>
             <p class="title">As a designer</p>
-            <p>I lead the design on MLFlow project and work closely with product managers and engineers to make big data and AI simple.</p>
+            <p>I lead the design on MLFlow project and work closely with product managers and engineers to make AI simple.</p>
           </div>  
       </div> 
             
       <div class="clear"></div>  
 
       <!-- story -->
-      <div class="fullSection">
-        <div class="text-intro">
-          <div class="one-column">
-            <p>ML Persona: <strong>Marie's story</strong> </p> 
-          </div>
-
-
-          <div class="two-column">
-              <p class="title">Welcome to the real world</p>
-              <p>Marie is a new CS graduate. She took some courses in machine learning and has participated in a few Kaggle competitions. After school, she joined a medium size company as a data scientist. Soon she realized what she did before, was just a small part of the picture.
-              </p>
-              <img src="img/mlflow/AI_realworld.png">
-
-              <p class="title">Why is that?</p>
-             
-              <p>
-              Why? What has changed since she practiced ML in school? One word: <strong>scale</strong>. By looking deeper, there are 3 key issues she needs to worry about in ML lifecycle. 
-                <ul class="list">
-                  <li><strong>Big data:</strong> Data is the fuel. Accessing and preparing big volume and variety of raw data requires more computing resources and a new form of parallel processing.</li>
-                  <li><strong>Product quality:</strong> Business expects ML to drive innovation. One needs to try various ML algorithms and run multiple experiments (model training) to get the best result.</li>
-                  <li><strong>Production:</strong> After getting the best result (a model), next is to move it to production (deploy), it can be challenging due to a plethora of deployment tools and environment a model needs to run in. </li>
-                </ul>
-              </p>
-              <img src="img/mlflow/MLChallenges.png">
-
-
-              <p class="title">Ups and downs</p>
-              <p>Marie freaked out. Luckily she got a team to cover her back. She has a data engineer who helps process the data and another infrastructure engineer deploy the model. She can focus on what she specializes in - picking up the best model. 
-              <br/><br/>
-              So Marie went ahead and tried a bunch of different algorithms & hyper-parameters, she looked at the result, saw what's working, refined and tried again. It was a highly iterative process and soon she got lost in her hundreds of experiments. One of the experiments had the best result but what were the inputs? She could not reproduce the model. 
-              </p>
-
-              <br/><br/>
-              <p class="title">Introducing MLFlow</p>
-              <p>
-                Matt, the data engineer in Marie's team sent her a link to MLFlow, a new open source machine learning platform from Apache Spark creator. Marie was not alone - hundreds of companies using ML have the same challenge: <strong>it is hard to track experiments and reproduce results</strong>.  
-                <br/><br/>
-                The MLFlow not only addresses one challenge. It also standardizes the way to package model and move it to production, which helped Marie downstream where she hands off her model to the infrastructure engineer. 
-              </p>
-              <img src="img/mlflow/MLFlowComponents.png" width="100%">
-              <p>Is this our happy ending? Not yet, definitely a good start.</p>
-          </div>
-          <div class="clear"></div> 
+      <div class="fullSection ltgraybg">
+        <div class="text-intro centered storyboard">
+            <span>MARIE'S STORY</span>
+            <img src="img/mlflow/MarieStory.png">
+            <div class="clear"></div> 
         </div> 
         <!-- end of text-intro -->
-
-
+        
         <div class="bluebg">
           <div class="text-intro">
-            <p>BEHIND THE SCENE</p>
-            <br/><br/>
-            <p>How does it feel like working on this project from a designer's perspective? <strong>Worthwhile</strong>. Here are 4 phases I went through.</p>
 
+             <div class="one-column">
+              <p>DESIGN PROCESS</p>
+            </div>
+
+            <div class="two-column">
+               <p>We started MLflow project from late 2017 and released the first alpha version at Spark Summit on June 5th, 2018. Since then, it starts to get traction, and more and more features are added. This case study tells the story behind the MVP release. The high-level process for the project includes the following:
+               </p> 
+                <figure>
+                  <img class="image" src="img/mlflow/process.png" width="100%">
+                    <!-- <figcaption>Process for MLflow MVP</figcaption> -->
+              </figure>
+            </div>
+        
             <div class="one-column">
-              <p>PHASE 1</p>
+              <p>RESEARCH</p>
             </div>
 
 
             <div class="two-column">
                 <p class="title">Do the homework and speak the same language</p>
-                <p>For a designer, this's probably the hardest part. The ML domain is complex and full of jargons. Besides reading ML tutorials and taking online courses, I also relied on our ML experts walking us through the ML workflow and the taxonomy so we can all speak the same language.
+                <p>For a designer, this's probably the hardest part. The ML domain is complex and full of jargons. Besides reading ML tutorials and taking online courses, I also relied on our ML experts walking us through the ML workflow and the taxonomy. So we can all speak the same language.
                 </p> 
 
                 <figure>
@@ -172,17 +143,9 @@
                   <figcaption>Learning sessions with our ML expert</figcaption>
               </figure>
 
-            </div> 
-            <div class="clear"></div>
-
-
-            <div class="one-column">
-              <p>PHASE 2</p>
-            </div>
-
-            <div class="two-column">
-                <p class="title">Synthesize the learnings and visualize the journey</p>
-                <p>Next we conduct user interviews to further understand ML engineers' workflow and hear the painpoints in their day-to-day work. Patterns are emerging around model training & deployment & management. The feedback from the field also repeated similar challenges. We synthesize the learnings into a user journey map for easy reference and knowledge sharing.   
+              <BR/>
+                <p class="title">Learn from the interviews and visualize the journey</p>
+                <p>Next, we conduct user interviews to understand ML engineers' workflow further and hear the pain points in their day-to-day work. Patterns were emerging around model training & deployment & management. The feedback from the field also repeated similar challenges. We synthesized the learnings into a user journey map for easy reference and knowledge sharing.     
                 </p> 
 
                 <figure>
@@ -193,36 +156,78 @@
             <div class="clear"></div>  
 
             <div class="one-column">
-              <p>PHASE 3</p>
+              <p>DEFINE</p>
             </div>
 
             <div class="two-column">
-                <p class="title">Design for MVP</p>
-                <p>For the first release, we addressed the model training challenge by providing a tracking UI to record and query experiments runs. To help user output a model that achieves high performance, we also provide a compare feature for run metrics visualization and comparison.    
-                <figure>
-                  <img class="image" src="img/mlflow/mvp.jpg" width="100%">
-                  <figcaption>MLFlow MVP UI Design - Experiment run list and detail page</figcaption>
+              <p class="title">Research key findings</p>
+               <p>From the research, we identified the top five pain points for the ML development and decided to address the first two first. Why? We did not see other products solving these two well. Also, we aim for the whole machine learning lifecycle, undertaking the first two is doing the groundwork for other challenges.</p>  
+              <figure>
+                  <img class="image" src="img/mlflow/ResearchKeyFindings.png" width="100%">
+                  <figcaption>Targeted painpoints for MVP</figcaption>
               </figure> 
 
+                <p class="title">Design scope for MVP</p>
+                <p>To help users manage experiments and reproduce runs, we provide a tracking UI to record and query experiments runs. All the input data are captured so users can rerun and generate the same result easily. Also, to help user output a model that achieves high performance, we provide a compare feature for run metrics visualization and comparison. </p>     
                 <figure>
-                  <img class="image" src="img/mlflow/DetailCompare.png" width="100%">
-                  <figcaption>MLFlow MVP UI Design - Comparison page</figcaption>
-              </figure> 
+                  <img class="image" src="img/mlflow/DesignFocus.png" width="100%">
+                  <figcaption>Design focus for first release</figcaption>
+                </figure> 
                 
-                </p>              
+                            
+            </div> 
+            <div class="clear"></div>  
+
+            <div class="one-column">
+              <p>DESIGN</p>
+            </div>
+
+            <div class="two-column">
+                <p class="title">Final designs for MVP</p>
+                 <p>The well-defined scope streamlined the design work afterward. By understanding the timeline and technical constraints, and working closely with engineers to iterate, we soon arrived at an MVP design.</p>
+
+                 <figure>
+                  <img class="image" src="img/mlflow/MVPPages.png" width="100%">
+                  <figcaption>Navigation</figcaption>
+                </figure>
+                <figure>
+                  <img class="image" src="img/mlflow/List.png" width="100%">
+                  <figcaption>Experiment page</figcaption>
+                </figure>
+                <figure>
+                  <img class="image" src="img/mlflow/DetailPage.png" width="100%">
+                  <figcaption>Experiment run page</figcaption>
+                </figure>
+                <figure>
+                  <img class="image" src="img/mlflow/ComparePage.png" width="100%">
+                  <figcaption>Compare page</figcaption>
+                </figure>
+                     
+                <p class="title">Iterate faster with Sketch symbols</p>
+                 <p>After the first release, I also made all the styles and the components Sketch symbols and added the Sketch file as a library. It improves design efficiency and helps me iterate fast on designs.</p>
+
+                <figure>
+                  <img class="image" src="img/mlflow/StyleGuide.png" width="100%">
+                  <figcaption>StyleGuide.png</figcaption>
+                </figure>
+                                      
             </div> 
             <div class="clear"></div>  
 
 
             <div class="one-column">
-              <p>PHASE 4</p>
+              <p>SHIP IT</p>
             </div>
 
             <div class="two-column">
                 <p class="title">Keep calm and carry on</p>
-                <p>After we released MLFlow at Spark Summit on June 5th 2018, we got great media coverage and lots of customer interests. We also saw positive community feedback. It is a big milestone but still a long way to go. We are working with our customers and the community to iterate and add more features. We also start to look at solving other challenges on model management and deployment. Stay tuned!  
+                <p>After we released MLFlow at Spark Summit on June 5th, 2018, we got great media coverage, positive community feedback, and lots of customer interests. It was a big milestone. </p>
 
-                </p>                
+                <br/>
+                <br/>
+                <p class="title">Shipping is about learning</p>
+                <p>As more customers and more community users adopt MLflow, we hear great feedback. People blogged, tweeted, or left comments on MLflow GitHub page. Shipping is about learning in this open community! We continued working with customers and the community to iterate and add more features. We also start to work at solving other challenges in model management and deployment. Stay tuned!  </p>
+                
             </div> 
             <div class="clear"></div>  
 
@@ -236,7 +241,7 @@
       <div class="fullSection whitebg center">
           <div class="output">
               <p class="title">THE RESULT</p>
-              <p class="question">It has been an amazing ride and I deeply appreciate the opportunity of working with and learning from the team. What I feel most proud of, is making AI simple for Marie and others.</p>
+              <p class="question">It has been an amazing ride, and I deeply appreciate the opportunity of working with and learning from the team. What I feel most proud of, is making AI simple for Marie and others.</p>
 
               <br/>
               
@@ -292,7 +297,7 @@
         <a href="https://www.linkedin.com/in/xiefen/"><i class="fa fa-linkedin"></i></a>
       
       </div>     
-      <div class="copyright">© Copyright Fen (Joy) Xie.</div>    
+      <div class="copyright">© Fen (Joy) Xie.</div>    
     </div>
 
   </footer>
